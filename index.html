@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-
-
-<!DOCTYPE html>
 <html lang="en" ng-app="sevenhills">
   <head>
     <!-- Required meta tags -->
@@ -27,34 +24,7 @@
 
     <header>
 
-      <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#!/">SEVEN HILLS</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#!/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!/aboutus">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!/showreel">Showreel</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!/people">People</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!/services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!/contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <nav ng-include="'navbar.html'" ng-if="location.path() !== '/'"></nav>
 
     </header>
 

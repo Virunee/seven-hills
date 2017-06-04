@@ -21,3 +21,9 @@ sevenhills.config(function ($routeProvider) {
         templateUrl: 'pages/contact.html',
     })
 });
+
+//CONTROLLERS
+
+sevenhills.run(function($rootScope, $location) {
+    $rootScope.location = $location;
+});
