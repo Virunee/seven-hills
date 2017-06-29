@@ -91,19 +91,29 @@ nav {
   text-transform: uppercase;
 }
 
-.people-container {
-
+.lead-paragraph {
+  margin-top: 75px;
 }
 
 .navbar-logo {
   max-height: 50px;
 }
 
+#showreel-video {
+  width:640px;
+  height:360px;
+  margin-top: 10%;
+}
+
 @media (max-width:770px){
   #logo {
     margin-top: 10%;
   }
-      footer {
-        visibility: hidden;
-      }
-   }
+  footer {
+    visibility: hidden;
+  }
+
+  #showreel-video {
+    max-width:100%;
+  }
+}
