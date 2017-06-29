@@ -18,23 +18,46 @@ nav {
   max-height: 100%;
   max-width: 100%;
   margin-top: 50%;
+  position: relative;
 }
 
 #main-nav li {
     display: inline-block;
     text-decoration: none;
-    padding-right: 30px;
+    padding-right: 50px;
     margin-top: 50px;
     text-transform: uppercase;
 }
 
 #main-nav li a {
   color: gray;
+  letter-spacing: 5px;
 }
 
 #main-nav li a:hover {
   text-decoration: none;
   color:black;
+}
+
+#navbarNav {
+  margin-left: 50px;
+}
+
+#navbarNav li {
+  margin-left: 20px;
+}
+
+#navbarNav li a {
+  letter-spacing: 3px;
+}
+
+.front-pics {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  bottom: 200px;
+  z-index: -1;
+  border-radius: 100%;
 }
 
 .media-body {
@@ -70,6 +93,10 @@ nav {
 
 .people-container {
 
+}
+
+.navbar-logo {
+  max-height: 50px;
 }
 
 @media (max-width:770px){
