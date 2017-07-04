@@ -9,6 +9,36 @@ footer {
     font-size: 0.8em;
 }
 
+.people-list {
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.people-list li{
+  display: inline-block;
+  max-width: 45%;
+}
+
+.services-list {
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.services-list li {
+  display: inline-block;
+  max-width: 45%;
+}
+
+.services-list li img {
+  transition: all .2s ease-in-out;
+}
+
+.services-list li img:hover {
+  transform: scale(1.1);
+}
+
 nav {
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -111,6 +141,98 @@ nav {
   margin-top: 10%;
 }
 
+.container-services {
+  text-align: center;
+  margin: 50px 100px 30px 100px;
+}
+
+.container-services-items {
+  margin-bottom: 75px;
+}
+
+.card {
+  border: none;
+}
+
+/* PEOPLE page fade out stuff */
+
+#fade-text-bart {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+#fade-out-bart {
+  position:absolute;
+  bottom:0;
+  height:200px;
+  width:100%;
+  background:-webkit-linear-gradient(rgba( 255, 255, 255, 0), rgba(255, 255, 255, 1) ); /* For Safari */
+  background:linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) );
+}
+
+#fade-text-chris {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+#fade-out-chris {
+  position:absolute;
+  bottom:0;
+  height:200px;
+  width:100%;
+  background:-webkit-linear-gradient(rgba( 255, 255, 255, 0), rgba(255, 255, 255, 1) ); /* For Safari */
+  background:linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) );
+}
+
+#fade-text-mes {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+#fade-out-mes {
+  position:absolute;
+  bottom:0;
+  height:200px;
+  width:100%;
+  background:-webkit-linear-gradient(rgba( 255, 255, 255, 0), rgba(255, 255, 255, 1) ); /* For Safari */
+  background:linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) );
+}
+
+#fade-text-Shaun {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+#fade-out-Shaun {
+  position:absolute;
+  bottom:0;
+  height:200px;
+  width:100%;
+  background:-webkit-linear-gradient(rgba( 255, 255, 255, 0), rgba(255, 255, 255, 1) ); /* For Safari */
+  background:linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) );
+}
+
+#fade-text-Simon {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+#fade-out-Simon {
+  position:absolute;
+  bottom:0;
+  height:200px;
+  width:100%;
+  background:-webkit-linear-gradient(rgba( 255, 255, 255, 0), rgba(255, 255, 255, 1) ); /* For Safari */
+  background:linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) );
+}
+
+/* small screen stuff */
+
 @media (max-width:770px){
   #logo {
     margin-top: 10%;
@@ -121,5 +243,9 @@ nav {
 
   #showreel-video {
     max-width:100%;
+  }
+
+  .services-list li {
+    max-width: 100%;
   }
 }
