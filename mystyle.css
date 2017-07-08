@@ -1,3 +1,4 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 
 footer {
     position: fixed;
@@ -13,6 +14,7 @@ footer {
   text-decoration: none;
   list-style-type: none;
   display: inline-block;
+  margin-bottom: 100px;
 }
 
 .people-list li{
@@ -119,8 +121,34 @@ nav {
   border-radius: 100%;
 }
 
+/* PANELS */
+
+.panel {
+  margin-bottom: 20px;
+}
+
+#panel-link.collapsed span {
+  transform: rotate(-90deg);
+}
+
+.card {
+  background-color: white;
+  border-radius: 0px;
+  padding: 10px;
+}
+
+.panel-body {
+  background-color: white;
+  padding: 10px;
+}
+
 .people-media {
   margin: 0px 50px 30px 0px;
+}
+
+.glyphicon.glyphicon-chevron-down {
+  float:right;
+  z-index: 10;
 }
 
 .people-media h4 {
@@ -133,6 +161,12 @@ nav {
 
 .navbar-logo {
   max-height: 50px;
+  margin-left: 20px;
+}
+
+.container-people {
+  padding: 100px;
+  margin-bottom: 100px;
 }
 
 #showreel-video {
@@ -150,6 +184,9 @@ nav {
   margin-bottom: 75px;
 }
 
+.glyphicon-chevron-down {
+  color: gray;
+}
 .card {
   border: none;
 }
