@@ -8,6 +8,7 @@ footer {
     background-color: white;
     padding-top: 30px;
     font-size: 0.8em;
+    z-index: 100;
 }
 
 .people-list {
