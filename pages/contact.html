@@ -1,3 +1,47 @@
 <div class="container">
-  <h1>Contact</h1>
+  <div class="well">
+    <p>Feel free to contact us and ask any questions you have using the form below.
+    We will try to reply within 24 hours.</p>
+
+<!--- SUBMIT MESSAGE FORM --->
+
+    <form ng-submit="addMessage(messages)" name='messageForm'>
+      <div class="form-group">
+        <div class="input-group">
+          <span class="input-group-addon">
+            <i class="glyphicon glyphicon-user"></i>
+          </span>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Name" ng-model="messages.name">
+      </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group">
+          <span class="input-group-addon">
+            <i class="glyphicon glyphicon-globe"></i>
+          </span>
+        <input type="email" name="email" class="form-control" id="email" placeholder="Email address (required)" ng-model="messages.email" required>
+      </div>
+
+      </div>
+
+      <div class="form-group">
+        <div class="input-group">
+          <span class="input-group-addon">
+            <i class="glyphicon glyphicon-envelope"></i>
+          </span>
+        <textarea class="form-control" name="message" rows="5" id="message" placeholder="Write your message here (required)" ng-model="messages.message" required></textarea>
+      </div>
+
+    </div>
+
+      <button type="submit" class="btn btn-primary" id="submit" value="Submit">Submit</button>
+
+      <div class="alert alert-info" ng-show="messageForm.$submitted">
+        <h4>Thanks!</h4>
+        <p>Your message has successfully been sent! We will try to reply within 24 hours.</p>
+        </div>
+
+    </form>
+
+  </div>
 </div>

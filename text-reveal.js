@@ -1,59 +1,36 @@
-function RevealMoreBart()
-{
-   /* Makes content div height automatic and removes the fade-out div and more link. */
-   /* Specify the ID values of the content div, the fade-out div, and the more link. */
-   document.getElementById("fade-text-bart").style.height = "auto";
-   document.getElementById("fade-out-bart").style.display = "none";
-}
-function RevealLessBart() {
-   document.getElementById("fade-text-bart").style.height = "200px";
-  document.getElementById("fade-out-bart").style.display = "inherit";
-}
+$(document).ready(function(){
+  $("#about-link").hover(function() {
+    $( '#logo' ).attr("src","images/logo-1.png");
+  });
+  $("#about-link").mouseout(function() {
+    $( '#logo' ).attr("src","images/logo.png");
+  });
 
-function RevealMoreChris()
-{
-   /* Makes content div height automatic and removes the fade-out div and more link. */
-   /* Specify the ID values of the content div, the fade-out div, and the more link. */
-   document.getElementById("fade-text-chris").style.height = "auto";
-   document.getElementById("fade-out-chris").style.display = "none";
-}
-function RevealLessChris() {
-   document.getElementById("fade-text-chris").style.height = "200px";
-  document.getElementById("fade-out-chris").style.display = "inherit";
-}
+  $("#showreel-link").hover(function() {
+    $( '#logo' ).attr("src","images/logo-2.png");
+  });
+  $("#showreel-link").mouseout(function() {
+    $( '#logo' ).attr("src","images/logo.png");
+  });
 
-function RevealMoreMes()
-{
-   /* Makes content div height automatic and removes the fade-out div and more link. */
-   /* Specify the ID values of the content div, the fade-out div, and the more link. */
-   document.getElementById("fade-text-mes").style.height = "auto";
-   document.getElementById("fade-out-mes").style.display = "none";
-}
-function RevealLessMes() {
-   document.getElementById("fade-text-mes").style.height = "200px";
-  document.getElementById("fade-out-mes").style.display = "inherit";
-}
+  $("#people-link").hover(function() {
+    $( '#logo' ).attr("src","images/logo-3.png");
+  });
+  $("#people-link").mouseout(function() {
+    $( '#logo' ).attr("src","images/logo.png");
+  });
 
-function RevealMoreShaun()
-{
-   /* Makes content div height automatic and removes the fade-out div and more link. */
-   /* Specify the ID values of the content div, the fade-out div, and the more link. */
-   document.getElementById("fade-text-Shaun").style.height = "auto";
-   document.getElementById("fade-out-Shaun").style.display = "none";
-}
-function RevealLessShaun() {
-   document.getElementById("fade-text-Shaun").style.height = "200px";
-  document.getElementById("fade-out-Shaun").style.display = "inherit";
-}
+  $("#services-link").hover(function() {
+    $( '#logo' ).attr("src","images/logo-4.png");
+  });
+  $("#services-link").mouseout(function() {
+    $( '#logo' ).attr("src","images/logo.png");
+  });
 
-function RevealMoreSimon()
-{
-   /* Makes content div height automatic and removes the fade-out div and more link. */
-   /* Specify the ID values of the content div, the fade-out div, and the more link. */
-   document.getElementById("fade-text-Simon").style.height = "auto";
-   document.getElementById("fade-out-Simon").style.display = "none";
-}
-function RevealLessSimon() {
-   document.getElementById("fade-text-Simon").style.height = "200px";
-  document.getElementById("fade-out-Simon").style.display = "inherit";
-}
+  $("#contact-link").hover(function() {
+    $( '#logo' ).attr("src","images/logo-5.png");
+  });
+  $("#contact-link").mouseout(function() {
+    $( '#logo' ).attr("src","images/logo.png");
+  });
+});
