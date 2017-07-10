@@ -34,17 +34,15 @@ footer {
 }
 
 .services-list li img {
+  position: relative;
   transition: all .2s ease-in-out;
   z-index: 10;
+  margin-top: 20px;
 }
 
 .services-list li img:hover {
   transform: scale(2);
   z-index: 10;
-}
-
-.container-services-items p {
-  z-index: -1;
 }
 
 nav {
@@ -188,6 +186,7 @@ nav {
 
 .container-services-items {
   margin-bottom: 75px;
+  margin-left: auto;
 }
 
 .glyphicon-chevron-down {
