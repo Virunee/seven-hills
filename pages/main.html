@@ -2,7 +2,7 @@
 <div class="row">
   <div class="col-md-4"></div>
   <div class="col-md-4">
-    <img class="center-block" src="images/logo.png" id='logo'/>
+    <img class="center-block" ng-src="{{imgsrc}}" id='logo'/>
   </div>
   <div class="col-md-4"></div>
 </div>
@@ -14,22 +14,27 @@
           <a href="#!/" id="home-link">Home</a>
         </li>
         <li>
-          <a href="#!/aboutus" id="about-link">About Us</a>
+          <a href="#!/aboutus" id="about-link"  ng-init="imgsrc='images/logo.png'" ng-mouseover="imgsrc='images/logo-1.png'" ng-mouseout="imgsrc='images/logo.png'">About Us</a>
         </li>
         <li>
-          <a href="#!/showreel" id="showreel-link">Showreel</a>
+          <a href="#!/showreel" id="showreel-link" ng-mouseover="imgsrc='images/logo-2.png'" ng-mouseout="imgsrc='images/logo.png'">Showreel</a>
         </li>
         <li>
-          <a href="#!/people" id="people-link">People</a>
+          <a href="#!/people" id="people-link" ng-mouseover="imgsrc='images/logo-3.png'" ng-mouseout="imgsrc='images/logo.png'">People</a>
         </li>
         <li>
-          <a href="#!/services" id="services-link">Services</a>
+          <a href="#!/services" id="services-link" ng-mouseover="imgsrc='images/logo-4.png'" ng-mouseout="imgsrc='images/logo.png'">Services</a>
         </li>
         <li>
-          <a href="#!/contact" id="contact-link">Contact</a>
+          <a href="#!/contact" id="contact-link" ng-mouseover="imgsrc='images/logo-5.png'" ng-mouseout="imgsrc='images/logo.png'">Contact</a>
         </li>
       </ul></center>
 
   </div>
 </div>
+</div>
+
+<div id="divID" ">
+  <img ng-src="{{imgsrc}}"/>
+  <div>Image description</div>
 </div>
