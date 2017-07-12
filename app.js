@@ -26,6 +26,7 @@ sevenhills.config(function ($routeProvider) {
 //CONTROLLERS
 
 sevenhills.controller('contactController', ['$scope', function($scope) {
+  $scope.show = false;
   $scope.openLink = function(url) {
     window.open(url);
   };
@@ -42,4 +43,17 @@ sevenhills.controller('contactController', ['$scope', function($scope) {
        console.log($scope.messagesArray);
        $scope.messages = {}; // empties form after submit
     };
+}]);
+
+sevenhills.controller('navController', ['$scope','$location', function($scope, $location) {
+  $scope.show = true; // or false
+$scope.$on('$routeChangeSuccess', function(){
+  // logic here to show/hide based upon $location.path()
+  var path = $location.path();
+  if (path === '/'){
+      $scope.show = false;
+  } else  {
+      $scope.show = true;
+  }
+});
 }]);
