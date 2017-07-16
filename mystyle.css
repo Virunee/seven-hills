@@ -10,12 +10,21 @@ footer {
     font-size: 0.8em;
     z-index: 100;
 }
+.sm-logo {
+  max-height: 30px;
+  padding: 5px 5px 0px 5px;
+}
 
 .people-list {
   text-decoration: none;
   list-style-type: none;
   display: inline-block;
   margin-bottom: 100px;
+}
+
+#valerie-pic {
+  background-color: gray;
+  border-radius: 50%;
 }
 
 .people-list li{
@@ -40,11 +49,10 @@ footer {
       margin-top: 20px;
     top:0;
     left:0;
-    margin:0;
     transition: all .2s ease-in-out;
   }
 
-  .triggerElement:hover .posDiv
+  .triggerElement:active .posDiv
 {
   position: fixed;
     top: 50%;
@@ -72,7 +80,7 @@ nav {
 #logo {
   max-height: 100%;
   max-width: 100%;
-  margin-top: 40%;
+  margin-top: 32%;
   position: relative;
 }
 
@@ -94,6 +102,28 @@ nav {
 #main-nav li a:hover {
   text-decoration: none;
   color:black;
+}
+
+.mainpage-sm-logos {
+align-items: center;
+text-align: center;
+}
+
+.main-sm-div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-right {
+  margin-left: 5%;
+}
+
+.mainpage-sm-logos li{
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  padding-right: 50px;
+  margin-top: 50px;
 }
 
 #navbarNav {
@@ -334,6 +364,10 @@ nav {
   .container-services {
     text-align: center;
     margin: 20px 50px 30px 50px;
+  }
+
+  .nav-right {
+    margin-left: 0px;
   }
 }
 
